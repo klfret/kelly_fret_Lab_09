@@ -30,19 +30,23 @@ console.log("The formatted number is now: " + newNumber);
 
 
 
+
 // global variables
-var numString = "617";
+var myNumber = "617";
 
 
-var numberReturn = function(string) {
+var numberString = function(string) {
 	
 	
+	if (isNaN(string)) {
+		
+	}
 	
 	
 	
 };
 
-
+returnedNumber = numberString(myNumber);
 
 
 
