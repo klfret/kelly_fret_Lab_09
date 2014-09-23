@@ -55,10 +55,10 @@
 // ***** Problem 3 - Date Differences *****
 // global variables
 var firstDate = "05/30/2014";
-var secondDate = "05/28/2014";
-//var string = "days";
+var secondDate = "05/29/2014";
 
-// compare two dates and return the difference
+
+// function - compare two dates and return the difference
 var dateDifferences = function(dateArg1, dateArg2, strAgr3) {
 	
 	// local variables
@@ -69,33 +69,88 @@ var dateDifferences = function(dateArg1, dateArg2, strAgr3) {
 	date1 = new Date(dateArg1);
 	date2 = new Date(dateArg2);
 	dateDiff = date1 - date2;
+	//console.log("The difference between the two dates is: " + returnedValue + " " + strDay);
 	
-	// return dateDiff's value
-	return dateDiff;
 	
-};
-
-// prompt user for input
-string = prompt("Enter either \"hours\" or \"days\" ");
-
-// call function and assign returned value to returnedValue
-returnedValue = dateDifferences(firstDate, secondDate, string);
-
-console.log(date1 + "\n" + date2);
+	
+	console.log(date1 + "\n" + date2);  // *****************
 	
 
 // if user enters hours, calculate for hours
-if (strAgr3 == "hours") {
+if (strAgr3 === "hours") {
 	dateDiff = Math.abs(dateDiff/1000/60/60);
-	console.log(dateDiff);
-	console.log("The difference between the two dates in hours is: " + dateDiff + " hours");
-	
-// user enters days, calculate for days
-} else {
-	dateDiff = Math.abs(dateDiff/1000/60/60/24);
-	console.log(dateDiff);
-	console.log("The difference between the two dates in days is: " + dateDiff + " days");
 }
+
+// if user enters days, calculate for days
+else if (strAgr3 === "days") {
+	dateDiff = Math.abs(dateDiff/1000/60/60/24);
+}
+
+// return dateDiff's value
+return dateDiff;
+	
+};
+
+
+// MAIN CODE
+
+// prompt user for input
+string3 = prompt("Enter either \"hours\" or \"days\" ");
+
+// call function and assign returned value to returnedValue
+returnedValue = dateDifferences(firstDate, secondDate, string3);
+
+console.log(returnedValue);
+
+if (string3 === "days" && returnedValue > 1) {
+	strDay = "days";
+	//
+} 
+else {
+	strDay = "day";
+}
+console.log("The difference between the two dates is: " + returnedValue + " " + strDay);
+
+if (string3 === "hours") {
+	console.log("The difference between the two dates is: " + returnedValue + string3);
+}
+
+
+
+
+
+
+
+
+
+// console.log(dateDiff);
+// console.log("The difference between the two dates in days is: " + dateDiff + strDay);
+
+
+
+
+//**********************************
+// console.log(date1 + "\n" + date2);
+// 	
+// 
+// // if user enters hours, calculate for hours
+// if (strAgr3 == "hours") {
+	// dateDiff = Math.abs(dateDiff/1000/60/60);
+	// console.log(dateDiff);
+	// console.log("The difference between the two dates in hours is: " + dateDiff + " hours");
+// 	
+// // user enters days, calculate for days
+// } else {
+	// dateDiff = Math.abs(dateDiff/1000/60/60/24);
+		// if (dateDiff > 1) {
+			// strDay = "days";
+		// } else {
+			// strDay = "day";
+		// }
+// 		
+	// console.log(dateDiff);
+	// console.log("The difference between the two dates in days is: " + dateDiff + strDay);
+//}
 
 
 
