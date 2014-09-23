@@ -6,7 +6,7 @@
 // 23 September 2014
 
 
-// Problem 1  - Format Number
+// Problem 1 - Format a number
 // globla variables
 var number1 = 566.6471983;
 var number2 = 2;
@@ -22,5 +22,36 @@ var formatNumber = function(num1, num2) {
 newNumber = formatNumber(number1, number2);
 
 console.log("The formatted number is now: " + newNumber);
+
+
+// **************************************************************************************************************************
+
+// Problem 2 - Number vs. String
+
+
+
+// global variables
+var numString = "617";
+
+
+var numberReturn = function(string) {
+	
+	
+	
+	
+	
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 
