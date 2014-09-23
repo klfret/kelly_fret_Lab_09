@@ -30,24 +30,66 @@
 // ***** Problem 2 - Number vs. String *****
 // global variables
 
-var myNumber = "617";
+// var myNumber = "617";
+// 
+// // if argument passed is a number, convert to a number and return value
+// var numberString = function(string) {
+// 	
+	// var numStr;
+// 	
+	// if (!isNaN(string)) {
+		// numStr = parseFloat(string);
+	// } else {
+		// numStr = "not a number";
+	// }
+// 	
+	// return numStr;
+// };
+// 
+// returnedValue = numberString(myNumber);
+// console.log("The value is: " + returnedValue);
 
-// if argument passed is a number, convert to a number and return value
-var numberString = function(string) {
+
+// **************************************************************************************************************************
+
+// ***** Problem 3 - Date Differences *****
+// global variables
+var firstDate = "05/30/2014";
+var secondDate = "05/10/2014";
+var string = "hours";
+
+
+
+
+
+var dateDifferences = function(dateArg1, dateArg2, strAgr3) {
 	
-	var numStr;
+	var date1;
+	var date2;
 	
-	if (!isNaN(string)) {
-		numStr = parseFloat(string);
-	} else {
-		numStr = "not a number";
-	}
+	date1 = new Date(dateArg1);
+	console.log(date1);
 	
-	return numStr;
+	
+	
+	
 };
 
-returnedValue = numberString(myNumber);
-console.log("The value is: " + returnedValue);
+returnedValue = dateDifferences(firstDate, secondDate, string);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
