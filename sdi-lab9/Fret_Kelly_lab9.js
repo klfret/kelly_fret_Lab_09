@@ -55,7 +55,7 @@
 // ***** Problem 3 - Date Differences *****
 // global variables
 var firstDate = "05/30/2014";
-var secondDate = "05/10/2014";
+var secondDate = "05/29/2014";
 var string = "hours";
 
 
@@ -68,8 +68,16 @@ var dateDifferences = function(dateArg1, dateArg2, strAgr3) {
 	var date2;
 	
 	date1 = new Date(dateArg1);
-	console.log(date1);
+	date2 = new Date(dateArg2);
+	dateDiff = date1 - date2;
+	dateDiff = Math.abs(dateDiff/1000/60/60);
 	
+	console.log(dateDiff);
+	console.log("The returned value is: " + dateDiff + " hours difference.");
+	//dateDiff = Math.abs(dateDiff/1000/60/60/24);
+	console.log(date1 + "\n" + date2);
+	
+	//if
 	
 	
 	
