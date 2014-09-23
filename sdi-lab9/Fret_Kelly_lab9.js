@@ -6,13 +6,14 @@
 // 23 September 2014
 
 
+// Problem 1  - Format Number
 // globla variables
 var number1 = 566.6471983;
 var number2 = 2;
 
 var formatNumber = function(num1, num2) {
 	
-	// format num1 to 2 decimal places and assign to newNumber
+	// format num1 to 2 decimal places and assign formatted number to num1
 	num1 = num1.toFixed(num2);
 	
 	return num1;
