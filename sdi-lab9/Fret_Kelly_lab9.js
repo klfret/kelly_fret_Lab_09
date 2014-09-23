@@ -7,19 +7,19 @@
 
 
 // globla variables
-var number1 = 566.6171983;
+var number1 = 566.6471983;
 var number2 = 2;
-//var num = 567.55;
-
 
 var formatNumber = function(num1, num2) {
 	
-	var newNumber;	
+	// format num1 to 2 decimal places and assign to newNumber
+	num1 = num1.toFixed(num2);
 	
-	newNumber = num1.toFixed(num2);
-	console.log(newNumber);
-	
-	
+	return num1;
 };
 
-formatNumber(number1, number2);
+newNumber = formatNumber(number1, number2);
+
+console.log("The formatted number is now: " + newNumber);
+
+
