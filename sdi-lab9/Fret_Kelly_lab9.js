@@ -54,6 +54,7 @@
 
 // ***** Problem 3 - Date Differences *****
 // global variables
+
 var firstDate = "05/30/2014";
 var secondDate = "05/10/2014";
 var strDay;
