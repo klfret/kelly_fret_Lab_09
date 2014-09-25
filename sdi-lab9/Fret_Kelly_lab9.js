@@ -57,6 +57,7 @@
 
 var firstDate = "05/30/2014";
 var secondDate = "05/10/2014";
+var string3;
 var strDay;
 
 // function - compare two dates and return the difference
